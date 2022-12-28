@@ -1,0 +1,26 @@
+global status  register	- GSR
+	global error flag(GEF)
+	comm error
+	not(chip reset or comm error)
+	TSD/chip overload
+	T-frame
+	d1
+	d2
+	fail Safe
+	
+module control register	- MCR
+	enable/disable
+	start
+	soft start enable
+	soft start delay control bits
+	
+module status  register - MSR
+	control type	open loop/close loop(PID)
+	switch type	random phase/zero-cross detect
+	
+
+output compare register	- OCR
+diffrential coefficent register	- DCR
+integral coefficent register - ICR
+proportional coefficent register- PCR
+phase limit register - PLRH, PLRL
